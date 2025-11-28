@@ -19,16 +19,16 @@
     <main>
         <label>
             Converter <b>de</b>
-            <select>
-                <option>R$ Real Brasileiro</option>
+            <select id="currency-from">
+                <option value="Real Brasileiro">R$ Real Brasileiro</option>
             </select>
         </label>
 
         <label>
             Converter <b>para</b>
-            <select class="select-currency">
-                <option value="dolar">US$ Dólar Americano</option>
-                <option value="euro">€ Euro</option>
+            <select id="currency-to" class="select-currency">
+                <option value="Dólar Americano">US$ Dólar Americano</option>
+                <option value="Euro">€ Euro</option>
             </select>
         </label>
 
@@ -38,6 +38,10 @@
         </label>
 
         <button class="convert-button">Converter</button>
+
+        <button class="ai-button" onclick="getExplanation()">🤖 Explicar com IA</button>
+
+        <div id="aiExplanation" class="ai-explanation"></div>
 
         <section>
             <div class="currency-box">
